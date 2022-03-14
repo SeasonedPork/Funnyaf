@@ -1,0 +1,13 @@
+Software required to run jdk: 1.7 or 1.8 are available
+
+tomcat7.
+
+mysql5.7 (or less than 5.7)
+
+eclipse (Java ee version)
+
+navicat: mysql management tool.
+
+
+
+

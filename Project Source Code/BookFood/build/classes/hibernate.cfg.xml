@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuration of each property-->
+        
+        <!-- True means that the sql sent to the database by Hibernate is displayed -->
+        <property name="show_sql">true</property>
+        
+        <!-- SQL dialect, the setting here is MySQL -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <!-- Number of database records read at one time -->
+        <property name="jdbc.fetch_size">16</property>
+        
+        <!-- Set up a bulk delete of the database -->
+        <property name="jdbc.batch_size">30</property>
+        
+        <!--Drivers-->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        
+        <!-- JDBC URL -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/db_book_food?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        
+        <!-- Database user name-->
+        <property name="connection.username">root</property>
+        
+        <!-- Database Password-->
+        <property name="connection.password"></property>
+        
+        <!-- Automatic submission of changes-->
+        <property name="connection.autocommit">true</property>
+
+    </session-factory>
+</hibernate-configuration>
